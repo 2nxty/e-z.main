@@ -1,7 +1,7 @@
 const link1 = "https://player.e-z.stream/?w="
 const param = window.location.search;
 const urlpa = new URLSearchParams(param); 
-const id = document.getElementById("iname").value;
+
 if (urlpa.has('error')) {
     const usr = urlpa.get('error');
     document.title = "E-Z - " + usr;
@@ -12,5 +12,7 @@ else{
 }
 
 function getid() {
+    const id = document.getElementById("iname").value;
+    console.log(link1 + id);
     window.location.replace(link1 + id);
 }
