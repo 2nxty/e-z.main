@@ -1,4 +1,4 @@
-const link1 = "https://player.e-z.stream/?w="
+const link1 = "https://hanako.e-z.stream/search?q="
 const param = window.location.search;
 const urlpa = new URLSearchParams(param); 
 
